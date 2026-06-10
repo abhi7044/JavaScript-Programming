@@ -96,3 +96,5 @@ if (colorr === "red") {
 } else {
     console.log("Your traffic light are broken");
 }
+
+// Lecture 12
