@@ -43,8 +43,8 @@ console.log('*' < '&');
 
 // Lecture - 8 ---> If statement
 console.log("before my if statement");
-let age = 23;
-if (age >= 18) {
+let agee = 23;
+if (agee >= 18) {
     console.log("You can vote");
 }
 console.log("after my statement");
@@ -52,4 +52,47 @@ console.log("after my statement");
 let firstname = "Abhijeet";
 if (firstname == "Abhijeet") {
     console.log(`Welcome ${firstname}`);
+}
+
+//Practice Question  - red for stop , yellow for slow down, green for go
+let color = "red"; 
+if (color === "red") {
+    console.log("Stop");
+}
+if (color === "yellow") {
+    console.log("Slow down");
+}
+if (color === "green") {
+    console.log("Go");
+}
+
+//Lecture - 10  ---> else if condition 
+let marks = 75;
+if (marks >= 80) {
+    console.log("A+");
+}else if (marks >= 60) {
+    console.log("A");
+}else if (marks >= 33) {
+    console.log("B");
+}else if (marks < 33) {
+    console.log("F");
+}
+
+// Lecture 11  ----> else statement 
+let aage = 18;
+if (aage >= 18) {
+    console.log("You can vote");
+} else {
+    console.log("You can not vote");
+}
+
+let colorr = "red"; 
+if (colorr === "red") {
+    console.log("Stop");
+}else if (colorr === "yellow") {
+    console.log("Slow down");
+}else if (colorr === "green") {
+    console.log("Go");
+} else {
+    console.log("Your traffic light are broken");
 }
