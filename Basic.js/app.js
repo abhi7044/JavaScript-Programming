@@ -97,4 +97,28 @@ if (colorr === "red") {
     console.log("Your traffic light are broken");
 }
 
-// Lecture 12
+// Lecture 12 - Practice Question 
+let size = "XL";
+if (size === "XL") {
+    console.log("Price is Rs. 250");
+} else if (size === "L") {
+    console.log("Price is Rs. 200");
+} else if (size === "M") {
+    console.log("Price is Rs. 100");
+} else if (size === "S") {
+    console.log("Price is Rs. 50");
+} else {
+    console.log("Invalid size");
+}
+
+// Lecture 13 ----> Nested if else
+let marks = 44;
+if ( marks >= 33) {
+    if (marks >= 80) {
+        console.log("O");
+    }else {
+        console.log("A");
+    }
+}else {
+    console.log("Better luck next time!");
+}
