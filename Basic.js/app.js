@@ -67,14 +67,14 @@ if (color === "green") {
 }
 
 //Lecture - 10  ---> else if condition 
-let marks = 75;
-if (marks >= 80) {
+let markes = 75;
+if (markes >= 80) {
     console.log("A+");
-}else if (marks >= 60) {
+}else if (markes >= 60) {
     console.log("A");
-}else if (marks >= 33) {
+}else if (markes >= 33) {
     console.log("B");
-}else if (marks < 33) {
+}else if (markes < 33) {
     console.log("F");
 }
 
@@ -122,3 +122,20 @@ if ( marks >= 33) {
 }else {
     console.log("Better luck next time!");
 }
+
+// Lecture 14 ----> Logical operator 
+let markks = 90;
+if(markks >= 33 && markks >= 80){
+    console.log("pass");
+    console.log("A+");
+}
+let markss = 90;
+if(markss >= 33 || markss <= 80){
+    console.log("pass");
+    console.log("A+");
+}
+let marksss = 75;
+if(!(marksss < 33)){
+    console.log("pass");
+    console.log("A+");
+}   //Left to right associativity
