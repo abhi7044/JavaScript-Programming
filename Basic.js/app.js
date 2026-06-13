@@ -139,3 +139,25 @@ if(!(marksss < 33)){
     console.log("pass");
     console.log("A+");
 }   //Left to right associativity
+
+//Lecture 15 --->Practice Question 
+let str = "apple";
+if (str[0] === "a" && str.length > 3) {
+    console.log("good string");
+}else{
+    console.log("bad string");
+}
+
+let num = 12;
+if((num%3 === 0 ) && ((num+1 == 15) || (num-1 ==11))){
+    console.log("safe");
+} else{
+    console.log("unsafe");
+}
+
+// Lecture 16 ---> truthy and falsy value
+if(true){
+    console.log("it has true value");
+}else{
+    console.log("it has false value");
+}
