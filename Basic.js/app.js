@@ -141,15 +141,15 @@ if(!(marksss < 33)){
 }   //Left to right associativity
 
 //Lecture 15 --->Practice Question 
-let str = "apple";
-if (str[0] === "a" && str.length > 3) {
+let strr = "apple";
+if (strr[0] === "a" && strr.length > 3) {
     console.log("good string");
 }else{
     console.log("bad string");
 }
 
-let num = 12;
-if((num%3 === 0 ) && ((num+1 == 15) || (num-1 ==11))){
+let nnum = 12;
+if((nnum%3 === 0 ) && ((nnum+1 == 15) || (nnum-1 ==11))){
     console.log("safe");
 } else{
     console.log("unsafe");
@@ -177,3 +177,45 @@ switch (colorrr) {
     default:
         console.log("Broken light ");
     } 
+
+// Lecture 18 ---> Practice Question 
+let day = 1;
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("Sunday");
+        break;
+    default:
+        console.log("Invalid day");
+}
+
+// Lecture 19 ---> Alert, Prompt 
+alert("Something is wrong");
+console.log("This is error message");
+console.error("This is an error message");
+console.warn("This is a warning message");
+
+prompt("enter your name?");
+let firstttname = prompt("enter yur name :");
+console.log(firstttname);
+
+let firsttname = prompt("enter your name :");
+let lastname = prompt("enter your last name :");
+console.log(`Welcome ${firsttname} ${lastname} !`);
