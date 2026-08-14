@@ -115,3 +115,131 @@ function concat(str){
     }
     return result;
 } 
+
+// Scope
+
+// function scope
+let sum = 54; //Gloabal Scope
+
+function calsum(a, b){
+    let sum = a+b; //Function Scope
+    console.log(sum);
+}
+calsum(1, 2);
+console.log(sum); 
+
+//Block Scope = this not use on the var , only use on the let and const
+{
+    const a = 25;
+    console.log(a);
+}
+
+
+for(let i =1; i<= 5 ; i++){
+    console.log(i);
+}
+
+let age = 25;
+if(age >= 18){
+    let str = "adult";
+    
+    console.log(str);
+}
+
+// Lexical Scope = nested function 
+function outerFunction(){
+    let x =5;
+    let y =6;
+    function innerFunc(){
+        console.log(x);
+    }
+    innerFunc();
+}  // hoisting 
+
+// Practice Question : what will be the output 
+let greet = "hello";
+
+function changeGreet(){
+    let greet = "namaste";
+    console.log(greet);
+    function innerGreen(){
+        console.log(greet);
+    }
+}
+console.log(greet);
+changeGreet();
+
+// Function Expressions
+const sum = function(a, b){
+    return a+b;
+}
+sum(2, 3);
+
+let hello = function(){
+    console.log("hello");
+}
+hello = function(){
+    console.log("namaste");
+}
+
+// Higher Order Functions = take one or multiple functionas argument.
+function multipleGreet(func, count){
+    for(let i = 1; i<= count; i++){
+        func();
+    }
+}
+
+let greet = function(){
+    console.log("hello");
+}
+
+multipleGreet(greet, 2);
+
+// Higher Order Functions = return as function 
+
+
+
+function oddOrEvenFactory(request){
+    if(request == "odd"){
+        return function(n) {
+            console.log(!(n%2 == 0));
+        }
+        
+    } else if(request == "even"){
+            
+        return function(n) {
+            console.log(n%2 == 0);
+        }
+        
+    }else {
+        console.log("Wrong request");
+    }
+}
+
+let request = "odd"; // even
+
+// Methods
+const calculator = {
+    num: 55,
+    add: function(a, b){
+        return a+b;
+    },
+    sub: function(a, b){
+        return a-b;
+    },
+    mul: function(a, b){
+        return a*b;
+    }
+};
+
+const calci = {
+    add(a, b){
+        return a+b;
+    },
+    sub(a, b){
+        return a-b;
+    },
+    mult(a,b){
+        return a*b;
+    }
+};
