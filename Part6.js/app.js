@@ -113,7 +113,7 @@ function concat(str){
     for(let i=0; i<str.length; i++){
         result += str[i];
     }
-    return result;
+    return result; 
 } 
 
 // Scope
@@ -243,3 +243,83 @@ const calci = {
         return a*b;
     }
 };
+
+
+
+// SHEET QUESTION 
+
+// Question 1: write a js function that return array elements larger than a number
+let arr = [8, 9, 10, 1, 2, 3, 4, 5, 6, 7];
+let num = 5;
+
+function greaterNum(arr, num){
+    for(let i = 0; i <= arr.length; i++){
+        if(arr[i] > num){
+            console.log(arr[i]);
+        }
+    }
+}
+greaterNum(arr, num);
+
+// Question 2: write a js function to extract uniquecharacter
+let str = "abcabcdefgggh";
+let ans = "";
+function uniqueCharacter(str){
+    for(let i =0; i <= str.length; i++){
+        let currchar = str[i];
+        if(ans.indexOf(currchar) == -1){
+            ans += currchar;
+        }
+    }
+}
+return ans ;
+
+
+// Question 3: write a java script function to country names as input and return the longest country name as output .
+let country = ["Australia", "Germany", "United States of America"];
+
+function largestName(country){
+    let ansIdx =0;
+    for(let i = 0; i<=country.length; i++){
+        let anslen = country[ansIdx].length;
+        let currlen = country[i].length;
+        if(currlen > anslen){
+            ansIdx = i;
+        }
+    }
+    return country[ansIdx];vhj
+}
+largestName(country);
+
+
+// Question 4: write a javaScript to count the number of vowels in a string argument.
+
+let str = "apnacollege";
+
+function CountVowel(str){
+    let count =0;
+    for(let i =0 ; i<str.length; i++){
+        if(
+            str.charAt(i) == "a" ||
+            str.charAt(i) == "e" ||
+            str.charAt(i) == "i" ||
+            str.charAt(i) == "o" ||
+            str.charAt(i) == "u" 
+        ){
+            count++;
+        }
+    }
+    return count;
+}
+CountVowel(str);
+
+
+// Question 5: write a javascript function to fenerate an random with range (start, end)
+let start = 100;
+let end = 200;
+
+function generaterandom(start, end){
+    let diff = end - start;
+    return Math.floor(Math.random()* diff)+start;
+}
+generaterandom(start, end);
