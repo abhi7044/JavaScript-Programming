@@ -71,7 +71,7 @@ console.log(id);
 const student = {
     name: "aman",
     marks: 98,
-    prop: this,
+    prop: this, // global scope
     
      
     getName: function(){
@@ -79,7 +79,82 @@ const student = {
         return this.name;
     },
     getMarks: () => {
-        console.log(this);
+        console.log(this);  //parent's scope -> window 
         return this.marks;
+    },
+
+    getInfo1: function(){
+        setTimeout(()=> {
+            console.log(this);  // student
+        }, 2000);
+    },
+    getInfo2:function(){
+        setTimeout(function () {
+            console.log(this); // window
+        }, 2000);
     }
 };
+
+// Practice Question: Write an arrow function that returns the square of a number 'n'.
+const getsquare = (n) => (n*n);
+
+// Practice Question: Write a function that prints "Hello World" 5 times at intervals of 2s each.
+
+let idd = setInterval(() => {
+        console.log("Hello World");
+    }, 2000);
+    
+
+setTimeout(()=>{
+    clearInterval(idd);
+    console.log("exit");
+}, 10000);
+
+// Question 1: write an array function named array average that accepts an array of numbers and return the average of those number?
+
+let arr = [1, 2, 3, 4, 5, 6];
+
+const arrayAverage = (arr) => {
+    let total = 0;
+    for(let i of arr){
+        total += i;
+    }
+    return total/arr.length;
+}
+
+console.log(arrayAverage(arr));
+
+
+// Question 2: Write an arrow function named is Even() that takes a single number as argument and returns if it is even or not.
+
+let n = 4;
+
+const isEven = (n) => {
+    if (n %2 == 0) {
+        console.log("even");
+    }else{
+        console.log("odd");
+    }
+}
+
+console.log(isEven(n));
+
+// or
+
+const iseven = (n) => (n%2 ==0);
+
+
+
+// Question 3: What will be the output
+
+const object = {
+    message: 'Hello, World!',
+
+    logMessage(){
+        console.log(this.message);
+    }
+};
+
+setTimeout(() => 
+    object.logMessage
+, 1000);
