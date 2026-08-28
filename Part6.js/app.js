@@ -95,6 +95,7 @@ function isadult(age){
         return "not adult";
     } 
 }
+console.log(isAdult(43));
 
 // Create a function the returns the sum of numbers frm 1 to n 
 function getSum(n){ 
@@ -168,6 +169,8 @@ function changeGreet(){
 }
 console.log(greet);
 changeGreet();
+
+
 
 // Function Expressions
 const sum = function(a, b){

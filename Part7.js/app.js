@@ -52,7 +52,7 @@ const mul = (a, b) => (
 ); 
 
 // Set Timeout
-console.loog("Hi there!");
+console.log("Hi there!");
 
 setTimeout(() => {
     console.log("Apna College");
