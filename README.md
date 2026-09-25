@@ -39,11 +39,12 @@ JavaScript (in progress) → Node.js/Express → MongoDB → React → AI Integr
 - [x] - [ ] Functions (regular & arrow)
 - [x] Array methods (`map`, `filter`, `reduce`, `forEach`, etc.)
 - [x] Destructuring & spread/rest operators
+- [x] DOM manipulation
 
 ### Coming Up
 - [ ] Scope & closures
 - [ ] Callbacks, Promises, `async/await`
-- [ ] DOM manipulation & events
+- [ ] DOM events
 - [ ] Fetch API / working with JSON
 - [ ] ES6 modules
 
