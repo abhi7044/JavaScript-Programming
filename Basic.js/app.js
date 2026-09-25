@@ -5,12 +5,6 @@ let a = 10;
 let b = 5;
 console.log("Sum is: ", a + b);
 
-// Lecture - 3  Template Literals
-let pencilprice = 10 ;
-let erasorprice = 5;
-let output = `The total price is : ${pencilprice} Rupees.`;
-console.log(output);
-
 // Lecture - 4   Operator in java script 
 let x = 10;
 let y = 5;
